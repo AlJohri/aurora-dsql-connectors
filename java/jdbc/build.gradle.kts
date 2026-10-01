@@ -20,7 +20,7 @@ plugins {
     id("java-library")
     id("maven-publish")
     id("jacoco")
-    id("com.diffplug.spotless") version "8.9.0"
+    id("com.diffplug.spotless") version "8.10.3"
     id("com.github.spotbugs") version "6.4.+"
     id("org.jreleaser") version "1.26.0"
 }
@@ -81,7 +81,7 @@ spotless {
     java {
         target("src/**/*.java", "integration-tests/src/**/*.java")
         licenseHeaderFile(".license-headers/java.txt")
-        googleJavaFormat("1.29.0").aosp()
+        googleJavaFormat("1.30.0").aosp()
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()
